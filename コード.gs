@@ -13,8 +13,7 @@ function main() {
   sheet = SpreadsheetApp.getActive().getSheetByName(sheetName);
 
   // シートの初期化
-  range = sheet.getRange(1, 1, sheet.getLastRow(), sheet.getLastColumn());
-  range.clear();
+  sheet.clear();
 
   /* ファイル、フォルダ一覧取得処理 */
   /** 対象フォルダのフォルダID */
